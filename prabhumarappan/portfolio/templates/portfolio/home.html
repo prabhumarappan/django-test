@@ -1,9 +1,13 @@
+{% load staticfiles %}
 <!DOCTYPE html>
 <html>
 <head>
 	<title>Prabhu Marappan</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap-theme.min.css' %}">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-	
+	The time is <b>{{time}}</b> 
 </body>
 </html>

@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home Page Polls</title>
+</head>
+<body>
+	<h3>These are the poll questions</h3>
+	{% for question in questions %}
+		<a href="{% url 'polls:detail' question.id %}">{{ question.question_text }}</a>
+	{% endfor %}
+</body>
+</html>
